@@ -60,59 +60,60 @@ Answer the following questions in this document:
 
 1) What is your docker username? Put it in the same line as `DOCKER_USER=` below (no markdown please) like `DOCKER_USER=your_username`:
 
-DOCKER_USER=
+DOCKER_USER= millers5
 
 2) What is docker (your own words)?
 
-A: 
+A: Docker is an open platform that allows the user to reduce time between writing code for an application and executing the software application. It provides consistency throughout the creation process, the ability to work on multiple areas without chewing up large swaths of space and can be used freely by anyone. It allows for simplicity by using the same environments, separating projects, and the ability to start up wherever someone else left off.
 
 3) What is a docker container?
 
-A: 
+A:  A container is a runnable image. It can be easily controlled by the user and can be accessible on multiple networks. Containers are run by an image.
 
 4) What is a docker image?
 
-A: 
+A: Docker image is a read only file that has all the code, operating systems, libraries, and various features that make up the container that will be run.
 
 5) What is a docker volume?
 
-A: 
+A: Volumes can act as a local directory. They can store files for running containers. This allows for changes to be made and those changes can be treated as separate files. The user has the ability to store volumes outside of the lifecycle of the container.
 
 6) In a Dockerfile, what does `FROM` mean?
 
-A: 
+A: FROM is a command to call up any valid base docker image. The container will start from this image.
 
 7) In a Dockerfile, what does `EXPOSE` mean?
 
-A: 
+A: EXPOSE is a command that tells the container to listen on a specified port. 
 
 8) What is port-forwarding?
 
-A: 
+A: A technique that allows computers or networks to connect with other public or private networks via the internet. This allows remote users access to local files.
+
 
 9) What is a docker tag?
 
-A: 
+A: A tag is a marker that gives an image its name. It can tag existing images to ones the user has built or modified.
 
 10) What is a docker layer?
 
-A: 
+A: A base image. Then whenever something else is installed or added, a layer is created. they continue to build on top of each other, like an onion.
 
 11) What is the difference between a docker tag and docker container id?
 
-A: 
+A: A docker tag can be applied to the image and the tag/name is chosen and created by the individual user, while a container id is a specific id code containing 64 randomly generated letters and numbers. A container id code cannot be modified, while a tag can
 
 12) What is the difference between a docker hub, repository, and image?
 
-A: 
+A: Images are hosted on repositories. Images contain all the different layers. Repositories are hosted on docker hub. Repositories can have lots of different images or files attached to them. The docker hub allows access to all of the repositories. An example is that an Image is like a paper, in a Repository or "file" and the files are in a hub or "file cabinet".
 
 13) What is detached mode?
 
-A:
+A: "-d" It means that the operation will run in the background of the terminal. Without detaching the terminal will lock up until the process is finished.
 
 14) What is the name of the docker container you created in the tutorial? It should be something like `<your_username>/get-started:part2)` where `<your_username>` is your username. If you have tagged and published (`push`ed) the docker container you created in Part 2, then I will be able to `pull` your container and `run` it on my own machine.
 
-A: 
+A: millers5/getting-started
 
 ### Turn in your work via GitHub Pull Request. 
 
