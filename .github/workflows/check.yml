@@ -1,0 +1,24 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Assignment requirement check
+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the master branch
+on: [push]
+
+jobs:
+  hello_world_job:
+    runs-on: ubuntu-latest
+    name: Check docker containers in personal docker hub repos
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set variables
+        run: |
+          echo "DOCKER_USER=$(grep '^DOCKER_USER=' README.md | cut -f2 -d=)" >> $GITHUB_ENV
+      - name: Check docker file <username>/getting-started
+        run: |
+          echo $(pwd)
+          ls -al
+          cat README.md
+          docker pull "${{ env.DOCKER_USER }}/getting-started"
